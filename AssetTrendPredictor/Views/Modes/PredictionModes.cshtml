@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Prediction Modes";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Selecciona el modo de predicción</h2>
+
+    <form asp-action="PredictionModes" method="post">
+        <div class="mb-3"> 
+            <label for="Modo" class="form-label">Modo: </label>
+            <select>
+                <option value="0">Media Móvil Simple (SMA) Crossover</option>
+                <option value="1">Regresión Lineal</option>
+                <option value="2">Momentum (ROC)</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
+

@@ -92,3 +92,7 @@ C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\obj\Debug\net9.0\refint\Asse
 C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\obj\Debug\net9.0\AssetTrendPredictor.pdb
 C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\obj\Debug\net9.0\AssetTrendPredictor.genruntimeconfig.cache
 C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\obj\Debug\net9.0\ref\AssetTrendPredictor.dll
+C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\obj\Debug\net9.0\AssetTrendPredictor.csproj.AssemblyReference.cache
+C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\bin\Debug\net9.0\Application.dll
+C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\bin\Debug\net9.0\Application.pdb
+C:\Proyecto\AssetTrendPredictor\AssetTrendPredictor\obj\Debug\net9.0\AssetTre.9705CFA0.Up2Date

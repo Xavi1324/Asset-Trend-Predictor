@@ -1,8 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@model HistoricalDataInputModel
+@{
+    ViewData["Title"] = "Ingresar datos históricos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <h2 class="mb-4">Formulario de datos históricos del activo</h2>
+
+    <form asp-action="PredictionModes" method="post">
+        <div class="mb-3">
+            <label for="HistoricalData" class="form-label">
+                Ingresa los datos (formato: <code>YYYY-MM-DD, Valor</code>) - exactamente 20 líneas:
+            </label>
+            <textarea asp-for="HistoricalData" class="form-control" rows="20" style="resize: none" placeholder="Ejemplo:
+2025-05-01, 150.35
+2025-05-02, 152.10
+..."></textarea>
+            <span asp-validation-for="HistoricalData" class="text-danger"></span>
+        </div>
+
+        @if (ViewData["CustomError"] != null)
+        {
+            <div class="alert alert-danger">@ViewData["CustomError"]</div>
+        }
+
+        <button type="submit" class="btn btn-primary">Calcular predicción</button>
+    </form>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36109.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetTrendPredictor", "AssetTrendPredictor\AssetTrendPredictor.csproj", "{3557A05C-5AB6-4D78-8620-EC18A02BF145}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{BC6A93FD-2595-477F-AADF-9C5D26AB26AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3557A05C-5AB6-4D78-8620-EC18A02BF145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3557A05C-5AB6-4D78-8620-EC18A02BF145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3557A05C-5AB6-4D78-8620-EC18A02BF145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6A93FD-2595-477F-AADF-9C5D26AB26AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6A93FD-2595-477F-AADF-9C5D26AB26AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6A93FD-2595-477F-AADF-9C5D26AB26AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6A93FD-2595-477F-AADF-9C5D26AB26AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
