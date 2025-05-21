@@ -1,18 +1,37 @@
-﻿@{
+﻿@model ModoViewModel
+@{
     ViewData["Title"] = "Prediction Modes";
 }
 
 <div class="container mt-5">
     <h2 class="mb-4">Selecciona el modo de predicción</h2>
 
-    <form asp-action="PredictionModes" method="post">
+    @if (TempData["MensajeExito"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["MensajeExito"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (!ViewData.ModelState.IsValid && ViewData.ModelState["OpcionSeleccionada"]?.Errors.Count > 0)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @ViewData.ModelState["OpcionSeleccionada"].Errors[0].ErrorMessage
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <form method="post">
         <div class="mb-3"> 
             <label for="Modo" class="form-label">Modo: </label>
-            <select>
+            <select asp-for="OpcionSeleccionada" class="form-control">
+                <option value="">-- Selecciona un modo --</option>
                 <option value="0">Media Móvil Simple (SMA) Crossover</option>
                 <option value="1">Regresión Lineal</option>
                 <option value="2">Momentum (ROC)</option>
             </select>
+           
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>

@@ -1,7 +1,15 @@
+using Application.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<DataProcesService>();
+builder.Services.AddScoped<SMAService>();
+builder.Services.AddScoped<RegresionLinealService>();
+builder.Services.AddScoped<MomentumService>();
+
 
 var app = builder.Build();
 

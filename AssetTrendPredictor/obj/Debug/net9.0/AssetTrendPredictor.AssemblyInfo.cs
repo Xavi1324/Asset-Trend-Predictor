@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AssetTrendPredictor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1afa0fe6d27a941bab2335173d9087ed2034cdf0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0fce1d1bb3299f90e37d0faaaab0fc4b290d9b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AssetTrendPredictor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AssetTrendPredictor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,7 +7,15 @@
 <div class="container mt-5">
     <h2 class="mb-4">Formulario de datos históricos del activo</h2>
 
-    <form asp-action="PredictionModes" method="post">
+    <form asp-action="Index" method="post">
+        @if (ViewData["CustomError"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @ViewData["CustomError"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
         <div class="mb-3">
             <label for="HistoricalData" class="form-label">
                 Ingresa los datos (formato: <code>YYYY-MM-DD, Valor</code>) - exactamente 20 líneas:
@@ -19,12 +27,18 @@
             <span asp-validation-for="HistoricalData" class="text-danger"></span>
         </div>
 
-        @if (ViewData["CustomError"] != null)
+       
+        <button type="submit" class="btn btn-primary">Calcular predicción</button>
+        @if (ViewData["Resultado"] != null)
         {
-            <div class="alert alert-danger">@ViewData["CustomError"]</div>
+            <div class="alert alert-info alert-dismissible fade show mt-4" role="alert">
+                <strong>Resultado de la predicción:</strong><br />
+                <pre>@Html.Raw(ViewData["Resultado"])</pre>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
         }
 
-        <button type="submit" class="btn btn-primary">Calcular predicción</button>
+
     </form>
 </div>
 
